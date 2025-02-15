@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson Plan Generator</title>
+</head>
+<body class="w-[100vw] min-h-screen overflow-y-auto flex flex-col items-center justify-between">
+
+        <section class="mt-10 flex flex-col items-center justify-center">
+            <div class="w-[93%] md:w-[760px] h-[8%] flex items-center justify-between py-4 px-6 bg-[#1f2937] rounded-2xl">
+                <img id="logo" src="images/logo.png" alt="wispp-logo" class="w-[10vw] sm:w-[5vw] md:w-[5vw] lg:w-[50px] rounded-[50%] shadow-2xl">
+                <a href="index.html"><button class="animated-button relative flex items-center cursor-pointer overflow-hidden text-xs md:text-[16px] gap-4 pl-7 pr-8 py-1">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                    <span class="text">Home</span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    </svg>
+                    </button>
+                </a>
+            </div>
+            <div class="card-contact w-[93%] md:w-[760px] p-4 my-4 flex-col md:flex-row py-4">
+                <div class="flex flex-col items-center md:w-[350px] gap-2 border-b-3 md:border-b-0 md:border-r-3 border-dashed pr-0 md:pr-4 mb-4 md:mb-0 pb-10 md:pb-0">
+                   <h1 class="text-sm">This project was created and designed by:</h1>
+                   <div class="card-profile flex items-center justify-left w-[18rem] md:w-[325px] h-[4rem] bg-[#353535] rounded-md transition-all duration-500 ease-in-out hover:transition-transform duration-200 hover:scale-105 shadow-xl">
+                        <img src="images/profile.jpeg" class="ml-5 w-[3rem] w-[3rem] rounded-sm">
+                            <div class="textBox flex flex-col text-left w-[calc(100%-90px)] ml-2 text-white">
+                                <div class="flex items-center justify-between">
+                                    <p class="text-sm font-bold">Erickson Yuste</p>
+                                    <div class="flex gap-2">
+                                        <a href="https://github.com/erickyuste" class="cursor-pointer" target="_blank"><img src="images/github.png" alt="github-logo" class="w-5 h-5 rounded-md"></a>
+                                        <a href="https://www.linkedin.com/in/erickson-yuste-lpt-995592230/" class="cursor-pointer" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="w-5 h-5 rounded-sm bg-white"></a>
+                                    </div>
+                                </div>
+                                <p class="text-xs font-light">Educator/Web Developer</p>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="flex w-[19rem] md:w-[325px] gap-4 rounded-xl px-2 md:px-0">
+                        <div class="card-phone w-[150px] h-[220px]">
+                            <div class="btn1"></div>
+                            <div class="btn2"></div>
+                            <div class="btn3"></div>
+                            <div class="btn4"></div>
+                            <div class="card-int flex items-center justify-center px-1">
+                                <div class="flex flex-col w-[100%] items-center justify-center">
+                                    <h1 class="text-xs font-bold text-left mb-1">Powered by:</h1>
+                                    <img src="images/gemini.png" alt="gemini-logo" class="w-[7rem] rounded-md shadow-xl mb-3">
+                                    <h1 class="text-xs font-bold mb-1">Technologies:</h1>
+                                    <div class="flex gap-1">
+                                        <img src="images/html.png" alt="html-logo" class="w-[2rem] rounded-lg shadow-xl">
+                                        <img src="images/css.png" alt="css-logo" class="w-[2rem] rounded-lg shadow-xl">
+                                        <img src="images/js.png" alt="js-logo" class="w-[2rem] rounded-lg shadow-xl">
+                                    </div>
+                                    <img src="images/tailwind.jpg" alt="tailwind-logo" class="w-[7rem] rounded-lg shadow-xl mt-2">
+                                    <img src="images/web3forms.png" alt="tailwind-logo" class="w-[7rem] rounded-lg shadow-xl mt-2">
+                                </div>
+                            </div>
+                            <div class="top">
+                              <div class="camera">
+                                <div class="int"></div>
+                              </div>
+                              <div class="speaker"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-[50%] items-center">
+                            <p class="text-xs w-full mb-1 text-left">If this tool has made your life simpler in any way and you wish to support my future projects, then...</p>
+                            <div class="book w-[40%] shadow-xl">
+                                <div class="group-hover:pb-10 transition-all duration-500 delay-200 flex flex-col items-center py-4">
+                                    <img src="images/aba-qr.png" alt="coffee" class="w-[85%] my-2 rounded-lg">
+                                </div>
+                                <div class="cover shadow-xl flex pr-3">
+                                    <img src="images/coffee.gif" alt="coffee" class="w-[8rem] left-[-0.5rem] absolute">
+                                    <h1 class="font-semibold text-xs absolute right-6">Buy<br>me a<br>coffee!</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-container w-[18rem] md:w-[350px]" id="contact-container">
+                    <span class="card__title mb-4">Email me!</span>
+                    <p class="card__content w-[100%] text-left text-xs md:text-sm text-[#333] pb-3 px-2">Help me improve this website by sending your comments and suggestions below:</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="card__form gap-2 flex items-center">
+
+                        <input type="hidden" name="access_key" value="08cba000-2cc9-4f2d-a6fd-71b6f99d3019">
+
+                        <input placeholder="Your Name" name="name" type="text" class="contact-inputs w-[100%] h-[2rem] p-2 text-sm mb-2" required>
+                        <input placeholder="Your Email" name="email" type="email" class="contact-inputs w-[100%] h-[2rem] p-2 text-sm" required>
+                        <textarea id="comment" name="nessage" rows="4"
+                        class="contact-inputs w-[100%] h-[1.5rem] h-[20%] rounded-lg p-2 text-sm"
+                        placeholder="Write your suggestions here..." required></textarea>
+                        <button type="submit" id="send-btn" class="w-[18vw] md:w-[80px] text-xs md:text-md font-bold py-2 cursor-pointer">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="w-full bg-[#1f2937] px-0 md:px-10">
+            <div class="w-full mx-auto  p-4 md:flex md:items-center md:justify-between">
+            <span class="text-xs md:text-sm text-[#9ca3af] sm:text-center">© 2025 <a>Yuste</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-[#e5e7eb]  sm:mt-0">
+                <li>
+                    <a href="about.html" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="faq.html" class="hover:underline me-4 md:me-6">FAQs</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="hover:underline me-4 md:me-6">Contact</a>
+                </li>
+                <li>
+                    <a href="https://wispp.edu.kh/" class="hover:underline me-4 md:me-6" target="_blank">WISPP</a>
+                </li>
+                <li>
+                    <a href="#logo" class="border-1 rounded-2xl px-2 hover:bg-white hover:text-[#1f2937] cursor-pointer">Back to top ▲</a>
+                </li>
+            </ul>
+            </div>
+        </footer>
+
+        <div hidden>
+            <div class="chat-body w-[750px] flex flex-col items-center">
+                <div class="chat-body">
+                    <div class="message-text" id="api-response" hidden></div>
+                        
+                    <div class="chat-footer" id="chat-footer" hidden>
+                        <form action="#" class="chat-form">
+                            <textarea placeholder="Message..." class="message-input" id="message-input"  required></textarea>
+                            <div class="chat-controls">
+                                <img type="submit" id="send-message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

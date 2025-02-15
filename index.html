@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson Plan Generator</title>
+</head>
+<body class="w-[100%] min-h-screen overflow-y-auto flex flex-col">
+        
+        <header id="header" class="absolute w-full h-[45vh] sm:h-[75vh] md:h-[400px] lg:h-[45vh]" >
+            <video autoplay muted loop playsinline class="w-full h-[100%] object-cover">
+                <source src="images/bg-vid.mp4" type="video/mp4">
+            </video>
+        </header>
+
+        <div class="relative w-full h-[2vh] flex items-center justify-between p-10">
+            <img id="logo" src="images/logo.png" alt="wispp-logo" class="w-[10vw] md:w-[50px] lg:w-[60px] rounded-[50%] shadow-2xl">
+            <a href="https://erickyuste.github.io/activitygenerator/"><button class="animated-button relative flex items-center cursor-pointer overflow-hidden text-xs md:text-[16px] gap-4 pl-7 pr-8 py-1"><svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Try GOM.Ai</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg></button>
+            </a>
+        </div>
+        
+
+        <div class="w-full relative flex justify-center" >
+            <div class="chat-body w-[750px] flex flex-col items-center">
+                <div class="header-title relative z-10 flex flex-col justify-center mb-2 text-center">
+                    <h1 class="text-[#e2e8f0] text-[12vw] md:text-[6rem] font-bold">Lesson Plan<strong>.Ai</strong></h1>
+                    <p class="text-[#e2e8f0] mx-6 md:mx-0 text-xs md:text-lg ">This AI teaching assistant, a product of Gemini AI and a collaboration with Westbridge International School of Phnom Penh, provides intelligent tools to revolutionize daily lesson management.</p>
+                </div>
+                <div class="z-100 card-container w-[90%] md:w-[750px] flex flex-col lesson-plan-container rounded-lg shadow-md p-6">
+                    <form action="/action_page.php" name="grade-level" class="flex flex-col">
+                        <label for="grade-level" class="text-sm sm:text-md md:text-xl mb-2 text-black cursor-pointer font-bold">Grade Level:</label>
+                        <select id="grade-level" name="grade-level" class="text-sm md:text-lg text-gray-700  rounded-md p-2 mb-4 transition ease-in-out duration-150 bg-[#e0e0e0] shadow-2xl transform-gpu">
+                            <option value="Pre-K">Pre-K</option>
+                            <option value="Kinder">Kinder</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </form>
+
+                    <form action="/action_page.php" name="subject" class="flex flex-col">
+                        <label for="subject" class="text-sm sm:text-md md:text-xl mb-2 text-black cursor-pointer font-bold">Subject:</label>
+                        <select id="subject" name="subject" class="text-sm md:text-lg text-gray-700  rounded-md p-2 mb-4 transition ease-in-out duration-150 bg-[#e0e0e0] shadow-2xl transform-gpu">
+                            <option value="English">English</option>
+                            <option value="Math">Mathematics</option>
+                            <option value="Science">Science</option>
+                            <option value="Humanities and Social Studies">HASS</option>
+                            <option value="Visual Arts">The Arts: Visual Arts</option>
+                            <option value="Technology - Digital">Technology - Digital</option>
+                            <option value="Technology - Design">Technology - Design</option>
+                            <option value="Language: Mandarin">Language: Mandarin</option>
+                            <option value="Language: Khmer">Language: Khmer</option>
+                            <option value="Health Education">Health Education</option>
+                            <option value="Physical Education">Physical Education</option>
+                        </select>
+                    </form>
+                    
+                    <form action="/action_page.php" name="core-value" class="flex flex-col">
+                        <label for="core-value" class="text-sm sm:text-md md:text-xl mb-2 text-black cursor-pointer font-bold">Core Value Integration for:</label>
+                        <select id="core-value" name="core-value" class="text-sm md:text-lg text-gray-700  rounded-md p-2 mb-4 transition ease-in-out duration-150 bg-[#e0e0e0] shadow-2xl transform-gpu">
+                            <option value="Responsibility">Responsibility</option>
+                            <option value="Collboration">Collboration</option>
+                            <option value="Caring and Sharing">Caring and Sharing</option>
+                            <option value="Honesty">Honesty</option>
+                            <option value="Open-mindedness">Open-mindedness</option>
+                            <option value="Respect">Respect</option>
+                            <option value="Reflectiveness">Reflectiveness</option>
+                        </select>
+                    </form>
+
+                    <form action="/action_page.php" name="verb" class="flex flex-col">
+                        <label for="verb" class="text-sm sm:text-md md:text-xl mb-2 text-black cursor-pointer font-bold">Bloom's Verb Selection</label>
+                        <select id="verb" name="verb" class="text-sm md:text-lg text-gray-700  rounded-md p-2 mb-4 transition ease-in-out duration-150 bg-[#e0e0e0] shadow-2xl transform-gpu">
+                            <option value="Remember">Remember</option>
+                            <option value="Understand">Understand</option>
+                            <option value="Apply">Apply</option>
+                            <option value="Analyze">Analyze</option>
+                            <option value="Evaluate">Evaluate</option>
+                            <option value="Create">Create</option>
+                        </select>
+                    </form>
+                    
+                    <label class="text-sm sm:text-md md:text-xl mb-2 text-black cursor-pointer">
+                        <h1 class="font-bold mb-2">Topic:</h1>
+                        <input id="topic" type="text" placeholder="Type a specific topic here..." class="text-sm md:text-lg text-gray-700  rounded-md p-2 w-full transition ease-in-out duration-150 bg-[#e0e0e0] shadow-2xl transform-gpu" required>
+                    </label>
+                    <div class="flex gap-6 justify-center">
+                        <button type="submit" id="generate-lesson-plan" class="w-[18vw] md:w-[120px] mt-4 text-xs md:text-lg font-bold py-2 cursor-pointer">Generate</button>
+                        <button onclick="refreshPage()" type="submit" id="generate-lesson-plan" class="refresh-button w-[18vw] md:w-[120px] mt-4 text-xs md:text-lg font-bold py-2 cursor-pointer">Refresh</button>
+                    </div>
+                </div>
+                <div class="chat-body">
+                    <div class="message-text" id="api-response" hidden></div>
+                        
+                    <div class="chat-footer" id="chat-footer" hidden>
+                        <form action="#" class="chat-form">
+                            <textarea placeholder="Message..." class="message-input" id="message-input"  required></textarea>
+                            <div class="chat-controls">
+                                <img type="submit" id="send-message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+        
+        <div class="w-full flex mt-[2rem] md:rounded-t-xl flex items-center justify-center">
+            <h1 class="logos1 font-bold w-[100%] md:w-[760px] text-lg md:text-2xl text-center py-2">Online Resources</h1>
+        </div>
+        
+        <div class="w-full flex justify-center">
+            <div class="logos1 w-[100%] md:w-[760px] py-[1rem] mt-1">
+                <div class="logos1-slide">
+                    <a href="https://www.scootle.edu.au/ec/p/browse_by_australian_curriculum#" target="_blank"><img src="images/scootle.png" alt="scootle-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://www.twinkl.com/search?q=western+australian+curriculum&c=35&r=parent" target="_blank"><img src="images/twinkle.png" alt="twinkle-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://www.turtlediary.com/" target="_blank"><img src="images/turtlediary.png" alt="turtlediary-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://wordwall.net/" target="_blank"><img src="images/wordwall.png" alt="wordwall-logo" class="h-[9vw] md:h-[70px] mx-[1rem] cursor-pointer"></a>
+                    <a href="https://www.classdojo.com" target="_blank"><img src="images/classdojo.png" alt="classdojo-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://k10outline.scsa.wa.edu.au/home/wa-curriculum/learning-areas/english/p-10-english-assessing" target="_blank"><img src="images/SCSA.png" alt="SCSA-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                </div>
+                <div class="logos1-slide">
+                    <a href="https://www.scootle.edu.au/ec/p/browse_by_australian_curriculum#" target="_blank"><img src="images/scootle.png" alt="scootle-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://www.twinkl.com/search?q=western+australian+curriculum&c=35&r=parent" target="_blank"><img src="images/twinkle.png" alt="twinkle-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://www.turtlediary.com/" target="_blank"><img src="images/turtlediary.png" alt="turtlediary-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://wordwall.net/" target="_blank"><img src="images/wordwall.png" alt="wordwall-logo" class="h-[9vw] md:h-[70px] mx-[1rem] cursor-pointer"></a>
+                    <a href="https://www.classdojo.com" target="_blank"><img src="images/classdojo.png" alt="classdojo-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://k10outline.scsa.wa.edu.au/home/wa-curriculum/learning-areas/english/p-10-english-assessing" target="_blank"><img src="images/SCSA.png" alt="SCSA-logo" class="h-[9vw] md:h-[70px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full flex justify-center mb-10">
+            <div class="logos2 w-[100%] md:w-[760px] py-[1rem] mt-1 md:rounded-b-xl">
+                <div class="logos2-slide">
+                    <a href="https://www.tinkercad.com/" target="_blank"><img src="images/tinkercad.png" alt="tinkercad-logo" class="h-[9vw] md:h-[60px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://edu.google.com/teaching-resources/" target="_blank"><img src="images/google.png" alt="google-logo" class="h-[9vw] md:h-[60px] rou[1rem]ed-xl mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://mrnussbaum.com/" target="_blank"><img src="images/mrnussbaum.png" alt="mrnussbaum-logo" class="h-[9vw] md:h-[60px] rou[1rem]ed-xl mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://gamilab.com/" target="_blank"><img src="images/gamilab.png" alt="gamilab-logo" class="h-[9vw] md:h-[60px] rounded-xl mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://www.abcya.com/" target="_blank"><img src="images/abcya.png" alt="abcya-logo" class="h-[9vw] md:h-[60px] rounded-xl mx-[1rem] rounded-lg cursor-pointer"></a>
+                </div>
+                <div class="logos2-slide">
+                    <a href="https://www.tinkercad.com/" target="_blank"><img src="images/tinkercad.png" alt="tinke-logo" class="h-[9vw] md:h-[60px] mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://edu.google.com/teaching-resources/" target="_blank"><img src="images/google.png" alt="wordwall-logo" class="h-[9vw] md:h-[60px] rou[1rem]ed-xl mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://mrnussbaum.com/" target="_blank"><img src="images/mrnussbaum.png" alt="mrnussbaum-logo" class="h-[9vw] md:h-[60px] rou[1rem]ed-xl mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://gamilab.com/" target="_blank"><img src="images/gamilab.png" alt="gamilab-logo" class="h-[9vw] md:h-[60px] rounded-xl mx-[1rem] rounded-lg cursor-pointer"></a>
+                    <a href="https://www.abcya.com/" target="_blank"><img src="images/abcya.png" alt="abcya-logo" class="h-[9vw] md:h-[60px] rounded-xl mx-[1rem] rounded-lg cursor-pointer"></a>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="w-full bg-[#1f2937] px-0 md:px-10">
+            <div class="w-full mx-auto  p-4 md:flex md:items-center md:justify-between">
+            <span class="text-xs md:text-sm text-[#9ca3af] sm:text-center">© 2025 <a>Yuste</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-[#e5e7eb]  sm:mt-0">
+                <li>
+                    <a href="about.html" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="faq.html" class="hover:underline me-4 md:me-6">FAQs</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="hover:underline me-4 md:me-6">Contact</a>
+                </li>
+                <li>
+                    <a href="https://wispp.edu.kh/" class="hover:underline me-4 md:me-6" target="_blank">WISPP</a>
+                </li>
+                <li>
+                    <a href="#logo" href="#header" class="border-1 rounded-2xl px-2 hover:bg-white hover:text-[#1f2937] cursor-pointer">Back to top ▲</a>
+                </li>
+            </ul>
+            </div>
+        </footer>
+
+        
+        
+  
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
