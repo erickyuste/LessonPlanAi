@@ -141,7 +141,7 @@ function generateLessonPlan() {
         6.4. Engagement Strategies (Provide at least 5)
         6.5. Scaffolded Exercises (Provide at least 5)
         6.6. Indenpendent Practice) (Provide at least 5)
-        6.7. Technology Integration Prompt (Identify technology tools and digital resources that will be integrated into the lesson. Explain how these technologies enhance the learning experience and support the lesson objectives. Discuss any potential challenges related to technology use and how they will be addressed during the lesson.),
+        6.7. Technology Integration (Identify technology tools and digital resources that will be integrated into the lesson. Explain how these technologies enhance the learning experience and support the lesson objectives. Discuss any potential challenges related to technology use and how they will be addressed during the lesson.),
         6.7. Differentiated learning (Detail how you will incorporate differentiated instruction to meet the diverse needs of students. Provide examples of instructional strategies that cater to various different learning styles and academic abilities. Explain how you will create an inclusive learning environment, considering cultural sensitivity and individual needs.),
         6.8. Inquiry-Based Questions (Provide at least 5 questioning techniques to stimulate critical thinking and curiosity.),
         6.9. Inclusive Classroom Environment (Provide at least 5 inclusive and supportive classroom environment for all students.),

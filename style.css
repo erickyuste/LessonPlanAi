@@ -277,6 +277,13 @@ button {
   border-radius: 14px;
 }
 
+.card__form textarea {
+  background: #e0e0e0;
+  box-shadow: inset 15px 15px 30px #bebebe, 
+                inset -15px -15px 30px #ffffff;
+  border: 1px solid #a3a3a3;
+}
+
 .card__form input::placeholder {
   font-size: 0.8rem; 
 }
