@@ -127,7 +127,7 @@ function generateLessonPlan() {
     const verb = document.getElementById("verb").value;
     
 
-    const inquiryText = `Act as a professional teacher and create a unique and detailed lesson plan based on Western Australian Curriculum for grade level: ${gradeLevel} on the subject: ${subject} for the topic: ${topic} (if the topic is Khmer, white the entire lesson plan in Khmer language). The lesson plan should be based on Bloom's Taxonomy ${verb}. 
+    const inquiryText = `Act as a professional teacher and create a unique and detailed lesson plan based on Western Australian Curriculum for grade level: ${gradeLevel} on the subject: ${subject} for the topic: ${topic}. The lesson plan should be based on Bloom's Taxonomy ${verb}. 
         It should have the following parts: 
         1. Lesson Objectives (Define clear and measurable learning objectives for a selected lesson. Specify how these objectives align with [ Input specific curriculum standards] and [input your targeted educational goals]. Describe the desired outcomes and skills students should acquire by the end of the lesson.), 
         2. Opening (includes Hook/Icebreaker and relevance to the topic), 
